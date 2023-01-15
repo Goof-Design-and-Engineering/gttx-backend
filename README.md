@@ -1,6 +1,6 @@
 # gttx-backend
 
-Takes the `pocketbase.go` file and compile to single binary via docker. Use the docker image build process to host for free on fly.io
+Takes the `pocketbase.go` file and compile to single binary via docker. Use the docker image build process to host for free on `fly.io`
 
 ## How 2 Deploy
 
