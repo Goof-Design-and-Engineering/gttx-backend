@@ -12,6 +12,8 @@ RUN apk add --no-cache \
 COPY  . /pb
 WORKDIR /pb
 
+# ENV PORKBUN_PRIVATE ""
+# ENV PORKBUN_PUBLIC  ""
 # Note: This will pull the latest version of pocketbase. If you are just doing 
 # simple customizations and don't have a local build environment for Go, 
 # leave this line in. 

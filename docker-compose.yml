@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  gttxbackend:
+    environment:
+      - PORKBUN_PRIVATE
+      - PORKBUN_PUBLIC
+    image: gttxbackend
+
+    volumes:
+      - $PWD/pb_data:/pb/pb_data
+      - $PWD/pb_private:/pb/pb_private
+
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8080:8080
+
+# volumes:
+#   pb_data:
